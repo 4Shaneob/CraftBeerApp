@@ -1,0 +1,42 @@
+﻿@model MvcBeerApp.Models.Description
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Description</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BeerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BeerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contents)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contents)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BreweryEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BreweryEmail)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DescriptionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

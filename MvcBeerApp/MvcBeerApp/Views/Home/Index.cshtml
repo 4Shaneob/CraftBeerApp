@@ -1,0 +1,138 @@
+﻿@{
+    ViewBag.Title = "CBeerApp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Craft Beer App</title>
+    <style>
+        body {
+            background: #000000;
+            color: #ffffff;
+            font: 14px 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        #header {
+            background: #dbc85b;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0 30px;
+            line-height: 150px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            padding: 0 30px;
+            line-height: 50px;
+        }
+
+        #main {
+            padding: 5px 30px;
+        }
+
+        .section {
+            width: 21.7%;
+            float: left;
+            margin: 0 0 0 4%;
+        }
+
+            .section h2 {
+                font-size: 13px;
+                text-transform: uppercase;
+                margin: 0;
+                border-bottom: 1px solid silver;
+                padding-bottom: 12px;
+                margin-bottom: 8px;
+            }
+
+            .section.first {
+                margin-left: 0;
+            }
+
+                .section.first h2 {
+                    font-size: 24px;
+                    text-transform: none;
+                    margin-bottom: 25px;
+                    border: none;
+                }
+
+                .section.first li {
+                    border-top: 1px solid silver;
+                    padding: 8px 0;
+                }
+
+            .section.last {
+                margin-right: 0;
+            }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 20px;
+        }
+
+        li {
+            padding: 4px 0;
+        }
+
+        a {
+            color: #267cb2;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Craft Beer App</h1>
+    </div>
+
+    <div id="main">
+        <div class="section first">
+            <p>This app is designed for Craft Beer Lovers or for anyone who wants to treat their taste buds to something a little different.</p>
+        </div>
+
+        <div class="section">
+            <h2>Customisations we are planning</h2>
+            <ul>
+                <li>To be able to search the database by County - this will list Brewpubs/breweries that are in that county</li>
+                <li>To be able to search by Beer Type (e.g. Stout, Ale, IPA, Fruit Beer) - this will show a list of brands of this type of beer</li>
+                <li>To Be able to search by Beer Brand (e.g. Full sail, Howling Gale, Sweetman's Red Weiss) - this will show a display of brewpubs/pubs that sell this beer.</li>
+                <li>To be able to search by Brewery -  this will list all the types of beers this brewery makes</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>This application consists of:</h2>
+            <ul>
+                <li><a href="http://beoir.org/">Beoir.org</a> - We used this sites directories as as content for the database</li>
+                <li><a href="http://import.io">Import.io</a>- we used this to "borrow" the Directories</li>
+            </ul>
+        </div>
+
+        <div class="section last">
+            <h2>Get help</h2>
+            <ul>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=320772">Get help</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=320773">Get more templates</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
